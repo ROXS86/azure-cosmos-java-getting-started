@@ -48,7 +48,8 @@ mvn exec:java@sync -DACCOUNT_HOST=YOUR_COSMOS_DB_HOSTNAME -DACCOUNT_KEY=YOUR_COS
 * From a command prompt or shell, run the following command to run the ASYNC application.
 
 ```bash
-mvn exec:java@async -DACCOUNT_HOST=YOUR_COSMOS_DB_HOSTNAME -DACCOUNT_KEY=YOUR_COSMOS_DB_MASTER_KEY
+mvn clean package
+mvn exec:java@async -DACCOUNT_HOST=https://localhost:8090 -DACCOUNT_KEY=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==
 ```
 
 ## About the code
